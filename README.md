@@ -1,1 +1,2 @@
-# React LG-Puricare XPD-001
+# React aquaguard XPD-002
+
