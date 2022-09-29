@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #444242;
+	font-family: 'Oswald', sans-serif;
+}
+
+#left-pointer {
+	width: 6.5%;
+	position: absolute;
+	left: 60%;
+}
+
+.ag-ayur {
+	padding-bottom: 56.5%;
+	height: 0;
+	position: relative;
+}
+
+.ag-ayur > video {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+.ag-ayur > #ag-mute {
+	width: 20px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	filter: invert(100%) sepia(59%) saturate(1003%) hue-rotate(243deg)
+		brightness(120%) contrast(107%);
+}
+
+.ag-ayur > div {
+	background-color: #c29d80;
+	/* background-image: url(https://asset.xapads.com/react-xpd-ads/assets/aquaguard/ag-bg.png); */
+	background-size: cover;
+	background-position: center;
+	border-top: 3px solid #67473b;
+	position: absolute;
+	transform: translateY(72%);
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 25%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.ag-ayur > div > #ag-logo {
+	height: 60%;
+	position: absolute;
+	right: 2%;
+	top: 20%;
+	animation: textReveal 1s;
+}
+
+.ag-ayur > div > #ag-anim {
+	width: 32%;
+	position: absolute;
+	bottom: -18%;
+	left: 45%;
+	transform: translateX(-50%);
+}
+
+.ag-ayur > div > #ag-slogan {
+	font-size: 70%;
+	width: 30%;
+	margin-left: 1%;
+	animation: textReveal 1s;
+}
+
+.ag-ayur > div > #ag-slogan > img {
+	width: 100%;
+	filter: invert(69%) sepia(10%) saturate(1317%) hue-rotate(351deg)
+		brightness(95%) contrast(88%);
+}
+
+.ag-ayur > div > #ag-tap-to-fill {
+	display: flex;
+	align-items: center;
+	animation: textBlink 1s infinite;
+}
+
+.ag-ayur > div > #ag-tap-to-fill > #ag-cta {
+	font-size: 70%;
+	position: absolute;
+	left: 68%;
+	transition: all 1s;
+	color: #67473b;
+}
+
+@media screen and (max-width: 500px) {
+	.ag-ayur > div > #ag-slogan {
+		font-size: 60%;
+	}
+
+	.ag-ayur > div > #ag-tap-to-fill > #ag-cta {
+		font-size: 70%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.ag-ayur > div > #ag-slogan {
+		font-size: 45%;
+	}
+
+	.ag-ayur > div > #ag-tap-to-fill > #ag-cta {
+		font-size: 60%;
+		left: 66%;
+	}
+
+	#left-pointer {
+		left: 58%;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.ag-ayur > div > #ag-slogan {
+		font-size: 35%;
+	}
+
+	.ag-ayur > div > #ag-tap-to-fill > #ag-cta {
+		font-size: 50%;
+	}
+}
+
+.ag-ayur > .img1 {
+	width: 25px;
+	position: absolute;
+	animation: bubble1 3s;
+	animation-delay: 3s;
+	opacity: 0;
+}
+
+.ag-ayur > .img2 {
+	width: 20px;
+	position: absolute;
+	animation: bubble2 3.5s;
+	animation-delay: 3s;
+	opacity: 0;
+}
+
+.ag-ayur > .img3 {
+	width: 22px;
+	position: absolute;
+	opacity: 0;
+	animation: bubble3 2s;
+	animation-delay: 3s;
+}
+
+.ag-ayur > .img4 {
+	width: 23px;
+	position: absolute;
+	opacity: 0;
+	animation: bubble4 2.5s;
+	animation-delay: 3s;
+}
+
+.ag-ayur > .img5 {
+	width: 21px;
+	position: absolute;
+	opacity: 0;
+	animation: bubble5 2.5s;
+	animation-delay: 3s;
+}
+
+.ag-ayur > .img6 {
+	width: 25px;
+	position: absolute;
+	opacity: 0;
+	animation: bubble6 2.5s;
+	animation-delay: 3s;
+}
+
+.ag-ayur > .img7 {
+	width: 15px;
+	position: absolute;
+	opacity: 0;
+	animation: bubble7 2s;
+	animation-delay: 3s;
+}
+
+.ag-ayur > .img8 {
+	width: 14px;
+	position: absolute;
+	opacity: 0;
+	animation: bubble8 2.5s;
+	animation-delay: 3s;
+}
+
+.ag-ayur > .img9 {
+	width: 15px;
+	position: absolute;
+	opacity: 0;
+	animation: bubble9 2.5s;
+	animation-delay: 3s;
+}
+
+.ag-ayur > .img10 {
+	width: 14px;
+	position: absolute;
+	opacity: 0;
+	animation: bubble10 2.5s;
+	animation-delay: 3s;
+}
+
+@keyframes bubble1 {
+	0% {
+		left: 20%;
+		bottom: -10%;
+		opacity: 1;
+	}
+	10% {
+		left: 22%;
+	}
+	20% {
+		left: 19%;
+	}
+	30% {
+		left: 22.5%;
+	}
+	40% {
+		left: 20%;
+	}
+	50% {
+		left: 18%;
+	}
+	60% {
+		left: 19%;
+	}
+	70% {
+		left: 18%;
+	}
+	80% {
+		left: 21%;
+	}
+	90% {
+		left: 19%;
+	}
+	100% {
+		left: 20%;
+		bottom: 25%;
+		opacity: 0.5;
+	}
+}
+
+@keyframes bubble2 {
+	0% {
+		left: 40%;
+		opacity: 1;
+		bottom: -10%;
+	}
+	10% {
+		left: 41%;
+	}
+	20% {
+		left: 38%;
+	}
+	30% {
+		left: 40.5%;
+	}
+	40% {
+		left: 39%;
+	}
+	50% {
+		left: 41%;
+	}
+	60% {
+		left: 39%;
+	}
+	70% {
+		left: 40%;
+	}
+	80% {
+		left: 43%;
+	}
+	90% {
+		left: 38%;
+	}
+	100% {
+		left: 40%;
+		bottom: 25%;
+		opacity: 0.5;
+	}
+}
+
+@keyframes bubble3 {
+	0% {
+		left: 60%;
+		bottom: -10%;
+		opacity: 1;
+	}
+	10% {
+		left: 64%;
+	}
+	20% {
+		left: 58%;
+	}
+	30% {
+		left: 61.5%;
+	}
+	40% {
+		left: 60%;
+	}
+	50% {
+		left: 57%;
+	}
+	60% {
+		left: 59%;
+	}
+	70% {
+		left: 62%;
+	}
+	80% {
+		left: 60%;
+	}
+	90% {
+		left: 58%;
+	}
+	100% {
+		left: 60%;
+		bottom: 28%;
+		opacity: 0.5;
+	}
+}
+
+@keyframes bubble4 {
+	0% {
+		left: 80%;
+		bottom: -10%;
+		opacity: 1;
+	}
+	10% {
+		left: 82%;
+	}
+	20% {
+		left: 79%;
+	}
+	30% {
+		left: 82.5%;
+	}
+	40% {
+		left: 80%;
+	}
+	50% {
+		left: 78%;
+	}
+	60% {
+		left: 79%;
+	}
+	70% {
+		left: 78%;
+	}
+	80% {
+		left: 81%;
+	}
+	90% {
+		left: 79%;
+	}
+	100% {
+		left: 80%;
+		bottom: 24%;
+		opacity: 0.5;
+	}
+}
+
+@keyframes bubble5 {
+	0% {
+		left: 70%;
+		bottom: -10%;
+		opacity: 1;
+	}
+	10% {
+		left: 72%;
+	}
+	20% {
+		left: 69%;
+	}
+	30% {
+		left: 72.5%;
+	}
+	40% {
+		left: 71%;
+	}
+	50% {
+		left: 65%;
+	}
+	60% {
+		left: 70%;
+	}
+	70% {
+		left: 69%;
+	}
+	80% {
+		left: 72%;
+	}
+	90% {
+		left: 68%;
+	}
+	100% {
+		left: 70%;
+		bottom: 22%;
+		opacity: 0.5;
+	}
+}
+
+@keyframes bubble6 {
+	0% {
+		left: 30%;
+		bottom: -10%;
+		opacity: 1;
+	}
+	10% {
+		left: 32%;
+	}
+	20% {
+		left: 29%;
+	}
+	30% {
+		left: 32.5%;
+	}
+	40% {
+		left: 31%;
+	}
+	50% {
+		left: 25%;
+	}
+	60% {
+		left: 30%;
+	}
+	70% {
+		left: 29%;
+	}
+	80% {
+		left: 32%;
+	}
+	90% {
+		left: 28%;
+	}
+	100% {
+		left: 30%;
+		bottom: 28%;
+		opacity: 0.5;
+	}
+}
+
+@keyframes bubble7 {
+	0% {
+		left: 15%;
+		bottom: -10%;
+		opacity: 1;
+	}
+	10% {
+		left: 17%;
+	}
+	20% {
+		left: 15%;
+	}
+	30% {
+		left: 17.5%;
+	}
+	40% {
+		left: 16%;
+	}
+	50% {
+		left: 10%;
+	}
+	60% {
+		left: 15%;
+	}
+	70% {
+		left: 14%;
+	}
+	80% {
+		left: 17%;
+	}
+	90% {
+		left: 13%;
+	}
+	100% {
+		left: 15%;
+		bottom: 28%;
+		opacity: 0.5;
+	}
+}
+
+@keyframes bubble8 {
+	0% {
+		left: 50%;
+		bottom: -10%;
+		opacity: 1;
+	}
+	10% {
+		left: 52%;
+	}
+	20% {
+		left: 50%;
+	}
+	30% {
+		left: 52.5%;
+	}
+	40% {
+		left: 51%;
+	}
+	50% {
+		left: 45%;
+	}
+	60% {
+		left: 50%;
+	}
+	70% {
+		left: 49%;
+	}
+	80% {
+		left: 52%;
+	}
+	90% {
+		left: 48%;
+	}
+	100% {
+		left: 50%;
+		bottom: 28%;
+		opacity: 0.5;
+	}
+}
+
+@keyframes bubble9 {
+	0% {
+		left: 60%;
+		opacity: 1;
+		bottom: -10%;
+	}
+	10% {
+		left: 61%;
+	}
+	20% {
+		left: 58%;
+	}
+	30% {
+		left: 60.5%;
+	}
+	40% {
+		left: 59%;
+	}
+	50% {
+		left: 61%;
+	}
+	60% {
+		left: 59%;
+	}
+	70% {
+		left: 60%;
+	}
+	80% {
+		left: 63%;
+	}
+	90% {
+		left: 58%;
+	}
+	100% {
+		left: 60%;
+		bottom: 25%;
+		opacity: 0.5;
+	}
+}
+
+@keyframes bubble10 {
+	0% {
+		left: 90%;
+		opacity: 1;
+		bottom: -10%;
+	}
+	10% {
+		left: 91%;
+	}
+	20% {
+		left: 88%;
+	}
+	30% {
+		left: 90.5%;
+	}
+	40% {
+		left: 89%;
+	}
+	50% {
+		left: 91%;
+	}
+	60% {
+		left: 89%;
+	}
+	70% {
+		left: 90%;
+	}
+	80% {
+		left: 93%;
+	}
+	90% {
+		left: 88%;
+	}
+	100% {
+		left: 90%;
+		bottom: 25%;
+		opacity: 0.5;
+	}
+}
+
+@keyframes textReveal {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes textBlink {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
