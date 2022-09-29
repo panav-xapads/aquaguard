@@ -18,7 +18,7 @@ function App() {
 			'https://asset.xapads.com/react-xpd-ads/assets/aquaguard/aquaguard-empty.png',
 		finalImg:
 			'https://asset.xapads.com/react-xpd-ads/assets/aquaguard/aquaguard-filled.png',
-		gif: 'https://asset.xapads.com/react-xpd-ads/assets/aquaguard/ag-animation.gif',
+		gif: 'https://asset.xapads.com/react-xpd-ads/assets/aquaguard/ag-anim.gif',
 		mute: 'https://asset.xapads.com/react-xpd-ads/assets/common/volume-mute-icon.png',
 		unmute: 'https://asset.xapads.com/react-xpd-ads/assets/common/volume-icon.png',
 	});
