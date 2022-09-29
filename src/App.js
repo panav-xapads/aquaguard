@@ -25,23 +25,26 @@ function App() {
 
 	const handleImageHover = () => {
 		let anim = document.getElementById('ag-anim');
-		anim.src = media.gif;
-		const cta = document.getElementById('ag-cta');
-		cta.innerHTML = '';
-		cta.style.width = '20%';
-		cta.style.fontSize = '50%';
-		cta.style.opacity = '0';
-		setTapped(true);
-		const leftGlove = document.getElementById('left-pointer');
-		leftGlove.style.display = 'none';
+		if (anim.src !== media.gif) {
+			anim.src = media.gif;
+			const cta = document.getElementById('ag-cta');
+			cta.innerHTML = '';
+			cta.style.width = '20%';
+			cta.style.fontSize = '50%';
+			cta.style.opacity = '0';
+			setTapped(true);
+			const leftGlove = document.getElementById('left-pointer');
+			leftGlove.style.display = 'none';
 
-		setTimeout(() => {
-			document.getElementById('ag-tap-to-fill').style.animation = 'none';
-			cta.innerHTML =
-				'A blend of 7 indigenous herbs and spices in your water.';
-			cta.style.left = '57%';
-			cta.style.opacity = '1';
-		}, 1000);
+			setTimeout(() => {
+				document.getElementById('ag-tap-to-fill').style.animation =
+					'none';
+				cta.innerHTML =
+					'A blend of 7 indigenous herbs and spices in your water.';
+				cta.style.left = '57%';
+				cta.style.opacity = '1';
+			}, 1000);
+		}
 	};
 
 	return (
