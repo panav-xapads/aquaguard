@@ -39,7 +39,7 @@ function App() {
 			document.getElementById('ag-tap-to-fill').style.animation = 'none';
 			cta.innerHTML =
 				'A blend of 7 indigenous herbs and spices in your water.';
-			cta.style.left = '58%';
+			cta.style.left = '57%';
 			cta.style.opacity = '1';
 		}, 1000);
 	};
